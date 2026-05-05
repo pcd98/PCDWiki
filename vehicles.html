@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>PCD Wiki</title>
+  <style>
+  
+  #vehicle-categories {
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 45vw 45vw 45vw;
+    gap: 5vw;
+    justify-content: center;
+  }
+  
+  main section section {
+    background-color: white;
+  }
+  
+  main section section h3 {
+    text-align: center;
+    position: relative;
+    top: -30%;
+  }
+  
+  main section section img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h1><a href="index.html">PCD Wiki</a></h1>
+    <nav>
+      <a hidden href="index.html">📆 Wydarzenia</a>
+      <a href="updates.html">Aktualizacje</a>
+      <a href="vehicles.html">Pojazdy</a>
+      <a hidden href="jobs.html">Zawody</a>
+      <a hidden href="road_events.html">Eventy Drogowe</a>
+      <a hidden href="music.html">Muzyka</a>
+      <a href="media.html">Społeczność</a>
+      <a href="thanks.html">Podziękowania</a>
+    </nav>
+  </header>
+  
+  <main>
+    
+    <section id="vehicle-categories">
+      
+      
+      <section class="l" onclick="pick('cars')">
+        <img src="car.png">
+        <h3>Samochody</h3>
+      </section>
+      
+      <section class="r" onclick="pick('vans')">
+        <img src="van.png">
+        <h3>Dostawczaki</h3>
+      </section>
+      
+      <section class="l" onclick="pick('strucks')">
+        <img src="struck.png">
+        <h3>Ciężarówki</h3>
+      </section>
+      
+      <section class="r" onclick="pick('coaches')">
+        <img src="coach.png">
+        <h3>Autobusy</h3>
+      </section>
+      
+      <section class="l" onclick="pick('gtrucks')">
+        <img src="gtruck.png">
+        <h3>Śmieciarki</h3>
+      </section>
+      
+    </section>
+    
+  </main>
+  
+  <script src="utils.js"></script>
+  
+</body>
+</html>

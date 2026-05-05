@@ -1,0 +1,90 @@
+
+/*--------------------------*/
+
+* {
+  font-family: 'Lato', sans-serif, arial;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+}
+
+/*--------------------------*/
+
+header {
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  background-color: crimson;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  padding: 8px;
+  white-space: nowrap;
+}
+
+header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav {
+  margin-left: 15px;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+header nav a {
+  position: relative;
+  top: 30%;
+  padding: 5px;
+  background-color: white;
+  color: crimson;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:active {
+  font-weight: bold;
+}
+
+/*--------------------------*/
+
+main section {
+  margin: 10px 5px;
+  padding: 10px;
+  background-color: white;
+}
+
+main section p {
+  margin: 10px 5px;
+  padding: 0;
+}
+
+main section h1, main section h2, main section h3 {
+  margin: 10px 5px;
+  padding: 0;
+}
+
+main section ul, main section ol {
+  margin: 0;
+}
+
+main a {
+  color: crimson;
+}
+
+main a:visited {
+  color: darkred;
+}
+
+/*--------------------------*/

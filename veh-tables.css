@@ -1,0 +1,39 @@
+
+table, tr, td, th {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table {
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: slategray;
+}
+
+tr {
+  
+}
+
+th, td {
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(230,220,220);
+}
+
+.veh-model {
+  color: white;
+  background-color: crimson;
+}
+
+img {
+  width: 20vw;
+}
+
+.img {
+  
+}
+
+p {
+  
+}
