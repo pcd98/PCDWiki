@@ -1,54 +1,113 @@
-
 //-------------
 // BAZA DANYCH
 //-------------
 
 // ↓ NIE ZAPOMNIJ HUJU JEBANY!
-const IloscPojazdow = 3
+const IloscPojazdow = 7
 
 const Car1 = [
 'Fiat 126p', //Nazwa w rzeczywistości
 'Flan 126p', //Nazwa w grze
-'car', //Obraz [.png]
+'?', //Obraz [.png]
 'Darmowy', //Cena [PLN]
 'Fastback', //Typ nadwozia
-'RWD', //Typ Napędu
+'?', //Typ Napędu
 'Benzyna', //Typ paliwa
-0, //Pojemność baku [l]
+'?', //Pojemność baku [l]
 'Manualna', //Skrzynia biegów
-4, //Ilość biegów
-25, //Moc silnika [KM]
-129 //Maksymalna prędkość [km/h]
+'4', //Ilość biegów
+'?', //Moc silnika [KM]
+'129' //Maksymalna prędkość [km/h]
 ]
 
 const Car2 = [
 'Renault 9', //Nazwa w rzeczywistości
 'Reno 9', //Nazwa w grze
-'car', //Obraz [.png]
-420, //Cena [PLN]
+'?', //Obraz [.png]
+'?', //Cena [PLN]
 'Sedan', //Typ nadwozia
-'RWD', //Typ Napędu
+'?', //Typ Napędu
 'Benzyna', //Typ paliwa
-0, //Pojemność baku [l]
+'?', //Pojemność baku [l]
 'Manualna', //Skrzynia biegów
-4, //Ilość biegów
-25, //Moc silnika [KM]
-150 //Maksymalna prędkość [km/h]
+'4', //Ilość biegów
+'?', //Moc silnika [KM]
+'150' //Maksymalna prędkość [km/h]
 ]
 
 const Car3 = [
 'Smart Fortwo', //Nazwa w rzeczywistości
 'SM Forfew', //Nazwa w grze
-'car', //Obraz [.png]
+'?', //Obraz [.png]
 'Nie na sprzedaż', //Cena [PLN]
 'Hatchback', //Typ nadwozia
-'RWD', //Typ Napędu
+'?', //Typ Napędu
 'Benzyna', //Typ paliwa
-0, //Pojemność baku [l]
+'?', //Pojemność baku [l]
 'Manualna', //Skrzynia biegów
-6, //Ilość biegów
-25, //Moc silnika [KM]
-127 //Maksymalna prędkość [km/h]
+'6', //Ilość biegów
+'?', //Moc silnika [KM]
+'127' //Maksymalna prędkość [km/h]
+]
+
+const Car4 = [
+'FSO Polonez', //Nazwa w rzeczywistości
+'FSA Coret', //Nazwa w grze
+'?', //Obraz [.png]
+'?', //Cena [PLN]
+'Liftback', //Typ nadwozia
+'?', //Typ Napędu
+'Benzyna', //Typ paliwa
+'?', //Pojemność baku [l]
+'Manualna', //Skrzynia biegów
+'5', //Ilość biegów
+'?', //Moc silnika [KM]
+'157' //Maksymalna prędkość [km/h]
+]
+
+const Car5 = [
+'Vw Golf II', //Nazwa w rzeczywistości
+'Wv Gold II', //Nazwa w grze
+'?', //Obraz [.png]
+'?', //Cena [PLN]
+'Hatchback', //Typ nadwozia
+'?', //Typ Napędu
+'Benzyna', //Typ paliwa
+'?', //Pojemność baku [l]
+'Manualna', //Skrzynia biegów
+'4', //Ilość biegów
+'?', //Moc silnika [KM]
+'167' //Maksymalna prędkość [km/h]
+]
+
+const Car6 = [
+'Toyota Corolla E82', //Nazwa w rzeczywistości
+'Toyama Corona E82', //Nazwa w grze
+'?', //Obraz [.png]
+'?', //Cena [PLN]
+'Sedan', //Typ nadwozia
+'?', //Typ Napędu
+'Olej napędowy', //Typ paliwa
+'?', //Pojemność baku [l]
+'Manualna', //Skrzynia biegów
+'5', //Ilość biegów
+'?', //Moc silnika [KM]
+'187' //Maksymalna prędkość [km/h]
+]
+
+const Car7 = [
+'Audi 80 B4', //Nazwa w rzeczywistości
+'Erbe 80', //Nazwa w grze
+'?', //Obraz [.png]
+'?', //Cena [PLN]
+'Sedan', //Typ nadwozia
+'?', //Typ Napędu
+'Olej napędowy', //Typ paliwa
+'?', //Pojemność baku [l]
+'Manualna', //Skrzynia biegów
+'5', //Ilość biegów
+'?', //Moc silnika [KM]
+'163' //Maksymalna prędkość [km/h]
 ]
 
 //---------------------
@@ -61,7 +120,7 @@ for(let n = 1; n <= IloscPojazdow; n++){
     
       document.write("<tr>")
         document.write("<th class='veh-model' colspan='6'>")
-          document.write(eval('Car'+n+'[1]')+"ㅤ/ㅤ"+eval('Car'+n+'[0]'))
+          document.write("<h2>"+eval('Car'+n+'[1]')+"ㅤ/ㅤ"+eval('Car'+n+'[0]')+"</h2>")
         document.write("</th>")
       document.write("</tr>")
     
@@ -148,3 +207,4 @@ for(let n = 1; n <= IloscPojazdow; n++){
 }
 
 
+    
